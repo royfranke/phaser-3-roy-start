@@ -22,6 +22,10 @@ npm run serve
 
 This will open up a browser with the examples served up.
 
+View the game window here: [localhost:3000/index.html](http://localhost:3000/index.html)
+
+Check out `game/js/` for code to fiddle with.
+
 ## License & Attribution
 
 See [licenses.md](./licenses.md) for the licenses & attributions for the various components of this repository - the game assets, the code examples and the blog posts themselves.

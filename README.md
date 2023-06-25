@@ -1,7 +1,14 @@
-## Running Examples Locally
-
-Looking to run the examples locally?
-Clone or download the repository. Make sure you have [node](https://nodejs.org/en/) installed. Open a terminal in the repository folder and run:
+## Rowan Instructions ##
+Open Powershell or your favorite terminal. Navigate to the folder you want to download into. Something like:
+```
+cd C:/Users/RowanComputer/My-Projects
+```
+Once there:
+```
+git clone git@github.com:royfranke/phaser-3-roy-start.git
+cd phaser-3-roy-start
+```
+Then:
 
 ```
 npm install

@@ -1,17 +1,21 @@
 const app_menus = {
   MAIN: [
-    { label: 'Load Dungeon', scene: 'Dungeon' },
-    { label: 'Load Game', scene: 'Load Game' },
-    { label: 'New Game', scene: 'New Game' },
-    { label: 'Settings', scene: 'System Settings' },
+    { LABEL: 'Load Test', LOADER: 'Test Scene' },
+    { LABEL: 'Load Game', LOADER: 'Load Game' },
+    { LABEL: 'New Game', LOADER: 'New Game' },
+    { LABEL: 'Settings', LOADER: 'System Settings' },
   ],
   PAUSE: [
-    { label: 'Save', function: 'saveGame' },
-    { label: 'Exit', function: 'exitGame' },
-    { label: 'Quit', function: 'quitGame' },
+    { LABEL: 'Save', LOADER: 'saveGame' },
+    { LABEL: 'Exit', LOADER: 'exitGame' },
+    { LABEL: 'Quit', LOADER: 'quitGame' },
   ],
   SETTINGS: [
-    { label: 'Back to Menu', function: 'toMainMenu' },
+    { LABEL: 'Back to Menu', LOADER: 'Main Menu' },
+    { LABEL: 'Controls', LOADER: 'settingControls' },
+    { LABEL: 'Graphics', LOADER: 'settingGraphics' },
+    { LABEL: 'Volume', LOADER: 'settingVolume' },
+    { LABEL: 'Options', LOADER: 'settingOptions' }
   ]
 };
 

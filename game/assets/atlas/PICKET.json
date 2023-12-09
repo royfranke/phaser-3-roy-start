@@ -1,0 +1,77 @@
+{"frames": [
+	{
+		"filename": "PICKET_UPPER_LEFT_",
+		"frame": {"x":0,"y":0,"w":16,"h":16},
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	{
+		"filename": "PICKET_H_1_",
+		"frame": {"x":16,"y":0,"w":16,"h":16},
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	{
+		"filename": "PICKET_H_2_",
+		"frame": {"x":32,"y":0,"w":16,"h":16},
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	{
+		"filename": "PICKET_UPPER_RIGHT_",
+		"frame": {"x":48,"y":0,"w":16,"h":16},
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	
+	{
+		"filename": "PICKET_LEFT_",
+		"frame": {"x":0,"y":16,"w":16,"h":16},
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	{
+		"filename": "PICKET_H_LEFT_",
+		"frame": {"x":16,"y":16,"w":16,"h":16},
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	{
+		"filename": "PICKET_H_RIGHT_",
+		"frame": {"x":32,"y":16,"w":16,"h":16},
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	{
+		"filename": "PICKET_RIGHT_",
+		"frame": {"x":48,"y":16,"w":16,"h":16},
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+
+	{
+		"filename": "PICKET_LOWER_LEFT_",
+		"frame": {"x":0,"y":32,"w":16,"h":16},
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	{
+		"filename": "PICKET_GATE_L_",
+		"frame": {"x":16,"y":32,"w":16,"h":16},
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	{
+		"filename": "PICKET_GATE_R_",
+		"frame": {"x":32,"y":32,"w":16,"h":16},
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	},
+	{
+		"filename": "PICKET_LOWER_RIGHT_",
+		"frame": {"x":48,"y":32,"w":16,"h":16},
+		"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+		"sourceSize": {"w":16,"h":16}
+	}
+]
+}

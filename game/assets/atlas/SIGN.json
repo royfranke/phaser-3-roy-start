@@ -1,0 +1,9 @@
+{"frames": [
+	{
+		"filename": "TEST",
+		"frame": {"x":0,"y":0,"w":48,"h":48},
+		"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+		"sourceSize": {"w":48,"h":48}
+	}
+]
+}

@@ -1,4 +1,3 @@
-import APP_CONST from "./config/menus.js";
 /**
  * Load Game
  */
@@ -12,12 +11,15 @@ export default class LoadGameScene extends Phaser.Scene {
     }
 
     preload() {
+        
+        
         this.cameras.main.setBackgroundColor('#7758ab')
         this.cameras.main.fadeIn(500, 0, 0, 0)
     }
 
     create() {
-
+        
+        
     }
 
     update() {

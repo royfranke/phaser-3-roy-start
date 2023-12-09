@@ -19,6 +19,5 @@
     "browser-sync": "^2.27.5",
     "gh-pages": "^3.2.3",
     "prettier": "^2.3.2"
-  },
-  "dependencies": {}
+  }
 }

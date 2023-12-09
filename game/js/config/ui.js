@@ -1,9 +1,9 @@
 const app_ui = {
     MARGIN: {
-        TOP: 32,
-        RIGHT: 0,
-        BOTTOM: 0,
-        LEFT: 32,
+        TOP: 16,
+        RIGHT: 16,
+        BOTTOM: 16,
+        LEFT: 16,
     },
     PADDING: {
         TOP: 4,
@@ -20,6 +20,10 @@ const app_ui = {
             FONT_SIZE: 16,
             LINE_HEIGHT: 24,
         },
+    },
+    TILE: {
+        WIDTH: 16,
+        HEIGHT: 16
     }
 };
 

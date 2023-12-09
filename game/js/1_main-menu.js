@@ -1,5 +1,4 @@
-import app_menus from "./config/menus.js";
-import app_ui from "./config/ui.js";
+import HelperHUD from "./helper/hud.js";
 /**
  * Main Menu
  */
@@ -11,35 +10,21 @@ export default class MainMenuScene extends Phaser.Scene {
     init() {
         this.cursors = this.input.keyboard.createCursorKeys()
         this.selected = 0;
-        this.ui = app_ui;
-        this.menu = app_menus.MAIN;
+        this.last_selected = 0;
     }
 
     preload() {
-        this.cameras.main.setBackgroundColor('#333333')
+        this.cameras.main.setBackgroundColor('#465e62')
         this.cameras.main.fadeIn(500, 0, 0, 0)
+        this.hud = new HelperHUD(this);
     }
 
     create() {
-        this.drawMenu();
-    }
-
-    drawMenu() {
-        var self = this;
-        this.menu.forEach(function (menu, index) {
-            self.add
-                .text(self.ui.MARGIN.LEFT, (index * self.ui.FONT.MENU.LINE_HEIGHT) + self.ui.MARGIN.TOP, `${menu.label}`, {
-                    font: `${self.ui.FONT.MENU.FONT_SIZE}` + "px monospace",
-                    fill: "#000000",
-                    padding: { x: self.ui.PADDING.LEFT, y: self.ui.PADDING.TOP },
-                    backgroundColor: (self.selected == index ? "yellow" : "#ffffff"),
-                })
-                .setScrollFactor(0);
-        });
+        this.hud.drawMenu('MAIN',this.selected);
     }
 
     selectNextButton(change) {
-        var menu_items = this.menu.length;
+        var menu_items = this.hud.menu_list.length;
         this.selected = parseInt(this.selected + change);
         if (this.selected >= menu_items) {
             this.selected = 0;
@@ -47,15 +32,15 @@ export default class MainMenuScene extends Phaser.Scene {
         if (this.selected < 0) {
             this.selected = menu_items - 1;
         }
-        this.drawMenu();
     }
 
     confirmSelection() {
-        // TODO
         this.cameras.main.fadeOut(500, 0, 0, 0)
         this.cameras.main.once(Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE, (cam, effect) => {
-            // Go to the main menu
-            this.scene.start(this.menu[this.selected].scene)
+            if (this.hud.load_selection != null) {
+                this.scene.switch(this.hud.load_selection)
+                this.hud.destroyMenu();
+            }
         })
     }
 
@@ -73,5 +58,7 @@ export default class MainMenuScene extends Phaser.Scene {
         else if (spaceJustPressed) {
             this.confirmSelection()
         }
+        this.hud.updateMenu('MAIN',this.selected, this.last_selected);
+        this.last_selected = this.selected;
     }
 }

@@ -1,31 +1,37 @@
-/**
- * Author: Michael Hadley, mikewesthad.com
- * Asset Credits:
- *  - Tileset, Michele "Buch" Bucelli (tileset artist) & Abram Connelly (tileset sponsor):
- *     https://opengameart.org/content/top-down-dungeon-tileset
- *  - Character, Michele "Buch" Bucelli:
- *      https://opengameart.org/content/a-platformer-in-the-forest
- */
 import SplashScene from "./0_splash.js";
 import MainMenuScene from "./1_main-menu.js";
 import SystemSettingsScene from "./2_settings.js";
 import NewGameScene from "./3_new-game.js";
 import LoadGameScene from "./4_load-game.js";
-import DungeonScene from "./dungeon-scene.js";
+import TutorialScene from "./5_tutorial.js";
+import TestScene from "./6_test.js";
+
 
 const config = {
-  type: Phaser.AUTO,
-  width: 800,
-  height: 600,
+  type: Phaser.WEBGL,
+  width: 960,
+  height: 540,
   backgroundColor: "#3a3a50",
   parent: "game-container",
   pixelArt: true,
-  scene: [SplashScene, MainMenuScene, NewGameScene, LoadGameScene, SystemSettingsScene, DungeonScene],
+  scene: [
+    SplashScene,
+    MainMenuScene,
+    SystemSettingsScene,
+    NewGameScene,
+    LoadGameScene,
+    TutorialScene,
+    TestScene
+  ],
   physics: {
     default: "arcade",
     arcade: {
+      //debug: true,
       gravity: { y: 0 },
     },
+  },
+  dom: {
+    createContainer: true
   },
 };
 

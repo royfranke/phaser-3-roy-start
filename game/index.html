@@ -7,12 +7,48 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Phaser Template</title>
 
-  <style>
+  <style type='text/css'>
+    @font-face {
+      font-family: 'defaultFont';
+      src: url('assets/fonts/NicoPups-Regular.ttf');
+      font-weight:400;
+      font-weight:normal;
+    }
+
+    @font-face {
+      font-family: 'menuFont';
+      src: url('assets/fonts/Kaph-Regular.ttf');
+      font-weight:400;
+      font-weight:normal;
+      font-style:normal;
+    }
+
+    @font-face {
+      font-family: 'menuFontItalic';
+      src: url('assets/fonts/Kaph-Italic.ttf');
+      font-weight:400;
+      font-weight:normal;
+      font-style:italic;
+    }
+    
     html,
     body,
     #game-container {
+      background: #465e62;
       margin: 0;
       padding: 0;
+      font-family: 'defaultFont';
+    image-rendering: optimizeSpeed;              /* Older versions of FF */
+    image-rendering: -moz-crisp-edges;           /* FF 6.0+ */
+    image-rendering: -webkit-optimize-contrast;  /* Webkit (non standard naming) */
+    image-rendering: -o-crisp-edges;             /* OS X & Windows Opera (12.02+) */
+    image-rendering: crisp-edges;                /* Possible future browsers. */
+    -ms-interpolation-mode: nearest-neighbor;    /* IE (non standard naming) */
+    image-rendering: pixelated; 
+    }
+
+    .game-preload {
+      font-family: 'defaultFont';
     }
 
     #game-container {
@@ -25,15 +61,38 @@
 
     #game-container>canvas {
       border-radius: 5px;
+      border: 2px solid #46465e;
+    }
+
+    .positive {
+      color:green;
+    }
+
+    .key-tip, .key-tip-active {
+      border: 1px solid;
+      padding: 0px 4px;
+      border-radius: 24px;
+      font-family: 'defaultFont';
+      font-size:12px;
+    }
+
+    .key-tip {
+      background-color: #ccc890;
+      color: #465e62;
+    }
+
+    .key-tip-active {
+      background-color: #465e62;
+      color: #ccc890;
     }
   </style>
 </head>
 
 <body>
+  
   <div id="game-container"></div>
 
-  <script src="//cdn.jsdelivr.net/npm/@mikewesthad/dungeon@1.2.2"></script>
   <script src="//cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
   <script src="js/index.js" type="module"></script>
-
+  <div class="game-preload">Skele 2023</div>
 </html>
